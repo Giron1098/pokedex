@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0,maximum-scale=1.0, minimum-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link rel="stylesheet" href="./css/estilos.css">
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.png">
+
+    <title>Pokedex</title>
+</head>
+<body>
+    <div class="container">
+
+        <header>
+            <div class="logo">
+                <img src="./assets/pokedex_logo.png" alt="logo pokedex">
+            </div>
+        </header>
+
+        <div class="dex">
+            <div class="ball1"></div>
+            <div class="ball2"></div>
+            <div class="ball3"></div>
+            <div class="ball4"></div>
+
+            <div class="dex_screen">
+                <div class="dex_screen2">
+
+                    <form action="" onsubmit="buscarPokemon(event)">
+                        <input class="pokemon_input" id="pokemon_input" type="text" name="pokemon_name" autocomplete="off" placeholder="Nombre del Pokemon" value="">
+                        <input type="submit" value="Buscar" id="submit_pokemon">
+                    </form>
+                    
+                    <div data-pokemon-card class="pokemon_card">
+                        <div data-pokemon-name>
+                            
+                        </div>
+                        <div data-pokemon-img-div class="pokemon_img">
+                            <img data-pokemon-img src="./assets/pokeball.png" alt="pokeball" class="poke_img">
+                        </div>
+                        <div data-pokemon-id class="pokemon_id"></div>
+                        <div data-pokemon-types class="pokemon_types"></div>
+                        <div data-pokemon-stats class="pokemon_stats"></div>
+                    </div>
+
+                </div>
+
+                <div class="ball5"></div>
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+            
+            <div class="cut"></div>
+
+        </div>
+    </div>
+</body>
+
+<footer>
+    <script src="./js/pokedex.js"></script>
+</footer>
+
+<script src="https://kit.fontawesome.com/c7f614afc4.js" crossorigin="anonymous"></script>
+
+</html>
